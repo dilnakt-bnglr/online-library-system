@@ -5,10 +5,12 @@ import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/Layout.jsx";
 import BrowseBooks from "./components/BrowseBooks.jsx";
+import Error from "./components/Error.jsx";
 
 const router = createBrowserRouter([
   {
     element: <Layout />,
+    errorElement: <Error />,
     children: [
       {
         path: "/",
