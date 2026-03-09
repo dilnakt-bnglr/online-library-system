@@ -252,8 +252,7 @@ export const books = [
     id: 19,
     title: "Thornwood Oath",
     author: "Marin Ellis",
-    imageUrl:
-      "https://images.pexels.com/photos/953214/pexels-photo-953214.jpeg",
+    imageUrl: "https://images.pexels.com/photos/34092/pexels-photo.jpg",
     category: "Fantasy",
     price: 349,
     rating: 4.5,
@@ -281,7 +280,7 @@ export const books = [
     title: "Moonweaver’s Pact",
     author: "Saira Javed",
     imageUrl:
-      "https://images.pexels.com/photos/127577/pexels-photo-127577.jpeg",
+      "https://images.pexels.com/photos/259869/pexels-photo-259869.jpeg",
     category: "Fantasy",
     price: 329,
     rating: 4.3,
@@ -307,7 +306,7 @@ export const books = [
     title: "The Lantern Thief",
     author: "Hannah Kaur",
     imageUrl:
-      "https://images.pexels.com/photos/167404/pexels-photo-167404.jpeg",
+      "https://images.pexels.com/photos/2678079/pexels-photo-2678079.jpeg",
     category: "Fantasy",
     price: 309,
     rating: 4.1,
