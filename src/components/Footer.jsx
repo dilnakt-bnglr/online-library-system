@@ -9,7 +9,7 @@ function Footer() {
     <div className="text-white flex gap-10">
       <div>
         <h2>E-BOOK</h2>
-        <p>gsjgdjahskjk</p>
+        <p>Book</p>
         <div className="flex gap-2">
           <FaFacebook />
           <FaInstagram />
