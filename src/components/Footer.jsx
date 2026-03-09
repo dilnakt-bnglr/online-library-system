@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="text-white flex gap-10">
+    <div className="text-white flex gap-10 mt-30">
       <div>
         <h2>E-BOOK</h2>
         <p>Book</p>
