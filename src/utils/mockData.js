@@ -101,7 +101,7 @@ export const books = [
     title: "Letters on the Balcony",
     author: "Elena Park",
     imageUrl:
-      "https://images.pexels.com/photos/3695299/pexels-photo-3695299.jpeg",
+      "https://images.pexels.com/photos/374885/pexels-photo-374885.jpeg",
     category: "Romance",
     price: 299,
     rating: 4.7,
@@ -129,7 +129,7 @@ export const books = [
     title: "Monsoon Promises",
     author: "Ananya Bose",
     imageUrl:
-      "https://images.pexels.com/photos/792381/pexels-photo-792381.jpeg",
+      "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg",
     category: "Romance",
     price: 275,
     rating: 4.6,
@@ -238,7 +238,7 @@ export const books = [
     id: 18,
     title: "Children of the Comet",
     author: "Leila Amiri",
-    imageUrl: "https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg",
+    imageUrl: "https://images.pexels.com/photos/34092/pexels-photo.jpg",
     category: "Fiction",
     price: 359,
     rating: 4.6,
@@ -416,3 +416,5 @@ export const books = [
       "Working the night shift at a luxury business hotel, manager Kabir knows every suite, maintenance issue, and regular guest. One stormy night, a panicked call comes from Room 914 about an intruder. The problem: their building only has eight floors and no room with that number. When he rushes upstairs, he finds a blood‑streaked keycard and security footage that rewinds itself. Red Room on Floor 9 is a claustrophobic hotel thriller with supernatural undertones and a protagonist trapped in his own workplace.",
   },
 ];
+
+export const popularBooks = books.filter((book) => book.rating > 4.5);
