@@ -7,6 +7,7 @@ import Layout from "./components/Layout.jsx";
 import BrowseBooks from "./components/BrowseBooks.jsx";
 import Error from "./components/Error.jsx";
 import BookDetails from "./components/BookDetails.jsx";
+import AddBook from "./components/AddBook.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/book/:id",
         element: <BookDetails />,
+      },
+      {
+        path: "/addbook",
+        element: <AddBook />,
       },
     ],
   },
