@@ -3,7 +3,7 @@ import BookItem from "./BookItem";
 
 function BookList({ books }) {
   return (
-    <div className="flex flex-wrap gap-20 ml-15">
+    <div className="gap-5 flex flex-wrap sm:gap-20 sm:ml-15">
       {books.map((book) => (
         <BookItem book={book} />
       ))}

@@ -5,7 +5,7 @@ import { popularBooks } from "./utils/mockData";
 
 function App() {
   return (
-    <div className="">
+    <div>
       <HomeBanner />
       <BookList books={popularBooks} />
     </div>

@@ -2,23 +2,29 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { books } from "../utils/mockData";
 import BookList from "./BookList";
+import { useSelector } from "react-redux";
 
 function BrowseBooks() {
   const params = useParams();
   const category = params.category;
   const [categoryBooks, setCategoryBooks] = useState([]);
   const [searchText, setSearchText] = useState("");
+  const addedBooks = useSelector((store) => store.addBook.books) || [];
 
   const loadTheDefaultCategoryBooks = () => {
     const filteredCategoryData = books.filter(
       (book) => book.category.toLowerCase() == category.toLowerCase(),
     );
-    setCategoryBooks(filteredCategoryData);
+    const filteredAddedBooks = addedBooks.filter(
+      (book) => book.category === category,
+    );
+    const allBooks = [...filteredAddedBooks, ...filteredCategoryData];
+    setCategoryBooks(allBooks);
   };
 
   useEffect(() => {
     loadTheDefaultCategoryBooks();
-  }, [category]);
+  }, [category, addedBooks]);
 
   const handleSearch = () => {
     let searchedBook = categoryBooks.filter((book) => {
@@ -42,7 +48,7 @@ function BrowseBooks() {
       <div className=" text-center m-[40px]">
         <input
           type="text"
-          className="bg-white rounded-xl w-[40%] p-[5px]"
+          className="w-[100%] bg-white rounded-xl sm:w-[40%] p-[5px]"
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />

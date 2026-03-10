@@ -5,7 +5,7 @@ function HomeBanner() {
   return (
     <div className="text-white text-center m-8">
       <h1 className="text-3xl">Welcome to the World of Books</h1>
-      <div className="flex gap-5 justify-center items-center p-5">
+      <div className="flex flex-wrap gap-5 justify-center items-center p-5">
         <Link to="/books/Mystery">
           <div className="border-2 border-gray-500 rounded-2xl p-4 w-[100px] h-[40px] flex items-center justify-center">
             Mystery
