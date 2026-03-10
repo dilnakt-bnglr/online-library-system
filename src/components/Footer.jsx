@@ -8,7 +8,9 @@ function Footer() {
   return (
     <div className="text-white flex gap-10 mt-20 shadow-lg shadow-cyan-500/50">
       <div className="w-[80%] p-5">
-        <h2 className="font-bold text-4xl mb-2">BookHub</h2>
+        <Link to="/">
+          <h2 className="font-bold text-4xl mb-2">BookHub</h2>
+        </Link>
         <p className="font-thin italic text-2xl">
           Your gateway to endless stories and knowledge
         </p>
@@ -23,7 +25,7 @@ function Footer() {
           <Link to="/">
             <li>Home</li>
           </Link>
-          <Link to="/browsebooks">
+          <Link to="/books/Romance">
             <li>Browse Books</li>
           </Link>
           <Link to="/addbook">
