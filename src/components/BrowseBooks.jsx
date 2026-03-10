@@ -11,6 +11,7 @@ function BrowseBooks() {
   const [searchText, setSearchText] = useState("");
   const addedBooks = useSelector((store) => store.addBook.books) || [];
 
+  // Filtering the books with category(using browser params)
   const loadTheDefaultCategoryBooks = () => {
     const filteredCategoryData = books.filter(
       (book) => book.category.toLowerCase() == category.toLowerCase(),
@@ -26,6 +27,7 @@ function BrowseBooks() {
     loadTheDefaultCategoryBooks();
   }, [category, addedBooks]);
 
+  // Fitering the books with search input
   const handleSearch = () => {
     let searchedBook = categoryBooks.filter((book) => {
       if (
@@ -38,6 +40,7 @@ function BrowseBooks() {
     setCategoryBooks(searchedBook);
   };
 
+  // Resetting browse page with default category
   const handleReset = () => {
     loadTheDefaultCategoryBooks();
     setSearchText("");

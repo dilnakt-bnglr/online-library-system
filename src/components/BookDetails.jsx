@@ -10,7 +10,7 @@ function BookDetails() {
   const navigate = useNavigate();
   const bookId = params.id;
   const bookDetails = books.filter((book) => book.id == bookId);
-  console.log(bookDetails);
+
   return (
     <div className=" mt-5 text-white sm:m-15 flex gap-5 flex-wrap">
       <a onClick={() => navigate(-1)} className="underline cursor-pointer">

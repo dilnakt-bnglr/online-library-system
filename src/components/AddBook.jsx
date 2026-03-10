@@ -9,11 +9,13 @@ function AddBook() {
   const navigate = useNavigate();
   const [error, setError] = useState("");
 
+  // Creating formData object with dynamic key(name of the input field)
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  // Adding books to store
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -26,6 +28,7 @@ function AddBook() {
       "price",
       "rating",
     ];
+    // Error handling for input fields
     for (let field of required) {
       if (!formData[field] || formData[field].toString().trim() === "") {
         setError("Please fill in all required fields.");
@@ -36,7 +39,6 @@ function AddBook() {
     setError("");
     let formDetails = { ...formData };
     formDetails["id"] = Date.now();
-    console.log("submitted", formData);
     if (!formDetails.category) {
       formDetails["category"] = "Mystery";
     }
