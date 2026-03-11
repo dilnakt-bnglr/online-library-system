@@ -198,8 +198,7 @@ export const books = [
     id: 15,
     title: "The Last Terraformer",
     author: "Jonas Keller",
-    imageUrl:
-      "https://images.pexels.com/photos/87009/mars-planet-red-front-87009.jpeg",
+    imageUrl: "https://images.pexels.com/photos/34092/pexels-photo.jpg",
     category: "Fiction",
     price: 429,
     rating: 4.1,
